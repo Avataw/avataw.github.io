@@ -16,7 +16,6 @@ let permalink = 'https://andrewru.com/';
 
 let allPosts = await Astro.glob('./posts/*.md');
 allPosts = allPosts
-  .filter(p => !p.frontmatter.draft)
   .sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf());
 
 // Full Astro Component Syntax:
