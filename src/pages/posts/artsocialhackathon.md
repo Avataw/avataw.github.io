@@ -56,14 +56,7 @@ The name itself is just a WIP, I experimented with some other names like **funby
 
 A simple quiz is supposed to guide you to an activity-centered club around your location.
 
-The quiz: 
-
-![hobby quiz workflow](/assets/blog/artsocialhackathon/hobbyWorkflowQuiz.png)
-
-The result: 
-
-![hobby result workflow](/assets/blog/artsocialhackathon/hobbyWorkflowResults.png)
-
+![hobby workflow](/assets/blog/artsocialhackathon/hobbyWorkflow.png)
 
 
 It was a lot of fun to adapt the thoughts behind the logo into the design of the single components.

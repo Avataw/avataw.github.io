@@ -273,3 +273,8 @@ blockquote .source {
 	color: var(--color);
 	font-size: 1rem;
 }
+
+p img {
+  max-width: 100%;
+  height: auto
+}
