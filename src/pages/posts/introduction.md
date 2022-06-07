@@ -4,7 +4,7 @@ publishDate: 07 Jun 2022
 name: Andre Wruszczak
 description: This time I'm definitely gonna post more than once!
 layout: ../../layouts/BlogPost.astro
-draft: false 
+draft: true 
 ---
 
 ### The harsh reality of technical blogs
