@@ -1,5 +1,5 @@
 {
-  "name": "@example/blog",
+  "name": "@avataw/blog",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,7 +10,5 @@
   },
   "devDependencies": {
     "astro": "^1.0.0-beta.41"
-  },
-  "dependencies": {
   }
 }
