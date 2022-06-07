@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-lucario.css">
+		<!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<!-- Primary Meta Tags -->
+<title>Happy Valentines Day, I love deploying this blog!</title>
+<meta name="title" content="Happy Valentines Day, I love deploying this blog!">
+<meta name="description" content="How I currently deploy my blog with Github, Gatsby and Vercel.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url">
+<meta property="og:title" content="Happy Valentines Day, I love deploying this blog!">
+<meta property="og:description" content="How I currently deploy my blog with Github, Gatsby and Vercel.">
+<meta property="og:image" content="https://astro.build/social.png?v=1">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url">
+<meta property="twitter:title" content="Happy Valentines Day, I love deploying this blog!">
+<meta property="twitter:description" content="How I currently deploy my blog with Github, Gatsby and Vercel.">
+<meta property="twitter:image" content="https://astro.build/social.png?v=1">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;700&display=swap">
+
+	<link rel="stylesheet" href="/assets/asset.15f91c4e.css" />
+</head>
+
+	<body>
+		<header class="wrapper astro-ZXX34WNC">
+  <article class="astro-ZXX34WNC">
+    <h1 class="astro-ZXX34WNC">
+      <a href="/" class="astro-ZXX34WNC">
+        <img src="/avataw-logo.png" width="32" height="32" class="astro-ZXX34WNC">
+        <span class="astro-ZXX34WNC">Andre Wruszczak</span>
+      </a>
+    </h1>
+  </article>
+</header>
+		<div class="wrapper">
+			<div class="layout astro-KIBH3TMC">
+  <article class="content astro-KIBH3TMC">
+    <div class="astro-KIBH3TMC">
+      <header class="astro-KIBH3TMC">
+        <p class="publish-date astro-KIBH3TMC">14 Feb 2021</p>
+        <h1 class="title astro-KIBH3TMC">Happy Valentines Day, I love deploying this blog!</h1>
+        <div class="author astro-JW2GEQYK">
+  <p class="astro-JW2GEQYK"><a href="https://github.com/Avataw" class="astro-JW2GEQYK">@Avataw</a></p>
+</div>
+        <h4 class="astro-KIBH3TMC">How I currently deploy my blog with Github, Gatsby and Vercel.</h4>
+      </header>
+      <main class="astro-KIBH3TMC">
+        <blockquote>
+<p>⚠️ This is outdated, the current blog runs on <a href="astro.build">astro</a>!</p>
+</blockquote><h3 id="happy-valentines-everyone">Happy Valentines everyone!</h3><p>Hopefully you have someone to share <em><strong>the love</strong></em> today (or any other day actually ~) but just in case you don’t, maybe you too will
+love how easy it can be to host a blog :)</p><h4 id="how-to-get-started-as-quickly-and-easily-as-possible">How to get started as quickly and easily as possible:</h4><p>So here is my current workflow enabling me to update my blog as easily as possible:
+<img src="/assets/blog/valentines/workflow.png" alt="workflow"></p><p>If you want to copy my exact setup you will need the following steps:</p><ul>
+<li>You need a Github account for your repository. Changes to your blog will be saved here.</li>
+<li>Gatsby Cloud offers an easy way to build gatsby projects and deploy them to a hosting provider like …</li>
+<li>Vercel, a very simple (and if you use it personally, free) hosting provider</li>
+<li>If you want a custom domain (e.g <a href="http://www.andrewru.com">www.andrewru.com</a>) you need to purchase it first :)</li>
+</ul><h5 id="gatsby-cloud"><a href="https://www.gatsbyjs.com/cloud/">Gatsby Cloud</a></h5><ol>
+<li>Click on the <strong>add a site</strong> button in Gatsby Cloud</li>
+<li>Select <strong>Start from a template</strong></li>
+<li>Choose one of the templates, preferably one that doesn’t use another service as a CMS.</li>
+<li>Name your repository.</li>
+<li>Allow Gatsby Cloud to use your Github account for the creation of the repository</li>
+<li>Go into the Site Settings of your new blog and depending on the template you might need to delete the google analytics environment variables</li>
+</ol><h5 id="vercel"><a href="https://vercel.com/">Vercel</a></h5><ol start="7">
+<li>Click on the <strong>new project</strong> button in Vercel</li>
+<li>Allow Vercel to access your github repositories</li>
+<li>Import the newly created repository</li>
+<li>Select your personal account</li>
+<li>Back in Gatsby Cloud in the Site Settings/Integrations you can <strong>Connect</strong> Vercel in the Hosting integrations</li>
+<li>In the project settings in Vercel you need to set up your Domain if you do not want the predefined vercel domain.</li>
+</ol><p>At this point, everytime you push commits to your repository’s main branch, Gatsby will build it and Vercel will deploy it.</p><p><strong>Wow so easy! Much simple!</strong> Especially if you have to spend several hours googling and asking people if you need
+an imprint and privacy disclaimer (spoiler: if you live in Germany you probably do :/)</p><h5 id="stuff-to-consider">Stuff to consider</h5><p>So you probably don’t want to give Gatsby Cloud and Vercel full access to all your repositories.
+In the future I might check if it isn’t easier to just use <a href="https://github.com/features/actions">github actions</a> directly
+especially because I am not a huge fan of the current build outbut by Gatsby Cloud. If it fails well… 🤷</p><h5 id="conclusion">Conclusion</h5><p>Well maybe this was not the easiest and quickest way possible… but it does beat setting up your own server and
+manually drag’n’dropping your built stuff via FileZilla.</p><p>Anywhooo now that it’s up and running it’s as easy as <code>git push</code> in order to update this site :))</p><p>I ❤ it.</p>
+      </main>
+    </div>
+  </article>
+</div>
+		</div>
+	</body></html>
