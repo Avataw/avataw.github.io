@@ -3,9 +3,9 @@ setup: |
   import Layout from '../../layouts/BlogPost.astro'
   import Cool from '../../components/Author.astro'
 title: Initial commit(ment)
-publishDate: 06 Jun 2022
+publishDate: 07 Jun 2022
 name: Andre Wruszczak
-description: Why I'm writing this blog and why this time I will definitely write more than 2 posts...
+description: This time I'm definitely gonna post more than once!
 draft: false 
 ---
 
