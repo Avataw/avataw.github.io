@@ -1,5 +1,6 @@
 ---
 // Component Imports
+import AnimatedTitle from '../components/AnimatedTitle.astro';
 import BaseHead from '../components/BaseHead.astro';
 import BlogHeader from '../components/BlogHeader.astro';
 import BlogPostPreview from '../components/BlogPostPreview.astro';
@@ -52,30 +53,11 @@ allPosts = allPosts
       padding-bottom: 4rem;
       margin-bottom: 2rem;
       border-bottom: 4px solid var(--theme-divider);
+      text-align: center;
     }
 
     .intro>* {
       margin: 0;
-    }
-
-    .latest {
-      font-size: 2.5rem;
-      font-weight: 700;
-      animation: color-switching 5s infinite ease-in-out;
-    }
-
-    @keyframes color-switching {
-      0% {
-        color: var(--color-black)
-      }
-
-      50% {
-        color: var(--color-purple)
-      }
-
-      100% {
-        color: var(--color-black)
-      }
     }
   </style>
 </head>
@@ -85,7 +67,7 @@ allPosts = allPosts
   <div class="wrapper">
     <main class="content">
       <section class="intro">
-        <h1 class="latest">{title}</h1>
+        <AnimatedTitle title={title} />
         <p>{description}</p>
       </section>
       <section aria-label="Blog post list">

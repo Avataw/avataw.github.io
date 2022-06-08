@@ -1,4 +1,5 @@
 ---
+import AnimatedTitle from './AnimatedTitle.astro';
 import Author from './Author.astro';
 
 export interface Props {
@@ -15,7 +16,7 @@ const { title, description, publishDate } = Astro.props;
     <div>
       <header>
         <p class="publish-date">{publishDate}</p>
-        <h1 class="title">{title}</h1>
+        <AnimatedTitle title={title} />
         <Author name="@Avataw" href="https://github.com/Avataw" />
         <h4>{description}</h4>
       </header>
