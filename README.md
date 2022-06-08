@@ -1,42 +1,14 @@
-# Astro Starter Kit: Blog
+# Avataw Blog
 
-```
-npm init astro -- --template blog
-```
+## Environment variables
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
+Locally a `.env` file is needed.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Current variables are: 
 
-Features:
-
-- ✅ SEO-friendly setup with canonical URLs and OpenGraph data
-- ✅ Full Markdown support
-- ✅ RSS 2.0 generation
-- ✅ Sitemap.xml generation
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   ├── robots.txt
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Tour.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
+| Name        | Type    | Description     |
+|:----------- |:------- |:--------------- |
+| SHOW_DRAFTS | boolean | shows all posts |
 
 ## 🧞 Commands
 
