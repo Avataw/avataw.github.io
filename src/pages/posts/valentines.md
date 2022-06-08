@@ -7,7 +7,7 @@ layout: ../../layouts/BlogPost.astro
 draft: false 
 ---
 
-> ⚠️ This is outdated, the current blog runs on [astro](astro.build)!
+> ⚠️ This is outdated, the current blog uses [Astro](astro.build) and is deployed via [Github Pages](https://pages.github.com/)!
 
 ### Happy Valentines everyone!
 

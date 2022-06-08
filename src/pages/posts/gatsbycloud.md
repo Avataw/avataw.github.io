@@ -7,7 +7,7 @@ layout: ../../layouts/BlogPost.astro
 draft: false 
 ---
 
-> ⚠️ This is outdated, the current blog runs on [astro](astro.build)!
+> ⚠️ This is outdated, the current blog uses [Astro](astro.build) and is deployed via [Github Pages](https://pages.github.com/)!
 
 As you might have read in [my first blog post ever](/posts/valentines), I currently
 use **Gatsby Cloud** to build this blog and **Vercel** to deploy and host it.
