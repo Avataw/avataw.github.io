@@ -1,0 +1,28 @@
+---
+export interface Props {
+  showImprint?: boolean;
+  showPrivacy?: boolean;
+}
+
+const { showImprint, showPrivacy } = Astro.props;
+---
+
+<footer>
+  <div class="flexContainer">
+    {showImprint && <a href="/imprint">Imprint</a>}
+    {showPrivacy && <a href="/privacy">Privacy</a>}
+  </div>
+</footer>
+
+<style>
+  footer {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .flexContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+</style>
