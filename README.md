@@ -1,14 +1,8 @@
 # Avataw Blog
 
-## Environment variables
+## Adding new posts
 
-Locally a `.env` file is needed.
-
-Current variables are: 
-
-| Name        | Type    | Description     |
-|:----------- |:------- |:--------------- |
-| SHOW_DRAFTS | boolean | shows all posts |
+There is a `/drafts` page for creating new posts. All filters will be ignored there.
 
 ## 🧞 Commands
 
