@@ -14,13 +14,9 @@ let title = 'Empathic Engineering';
 let description = 'A blog about my emotions as a full stack web developer.';
 let permalink = 'https://andrewru.com/';
 
-
-const showDrafts: boolean = import.meta.env.SHOW_DRAFTS;
-
 let allPosts = await Astro.glob('./posts/*.md');
 allPosts = allPosts
-  .filter(post => showDrafts || post.frontmatter.draft === false)
-  .filter(post => showDrafts || new Date().valueOf() > new Date(post.frontmatter.publishDate).valueOf())
+  .filter(post => new Date().valueOf() > new Date(post.frontmatter.publishDate).valueOf())
   .sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf());
 
 // Full Astro Component Syntax:

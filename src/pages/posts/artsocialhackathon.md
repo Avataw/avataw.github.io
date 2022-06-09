@@ -4,7 +4,6 @@ publishDate: 28 Feb 2021
 name: Andre Wruszczak
 description: I love Art, I love Social, I love Hackathons!
 layout: ../../layouts/BlogPost.astro
-draft: false 
 ---
 
 Happy last day of February everyone!

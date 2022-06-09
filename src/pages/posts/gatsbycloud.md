@@ -4,7 +4,6 @@ publishDate: 04 Mar 2021
 name: Andre Wruszczak
 description: I love simplifying my CI-pipeline
 layout: ../../layouts/BlogPost.astro
-draft: false 
 ---
 
 > ⚠️ This is outdated, the current blog uses [Astro](astro.build) and is deployed via [Github Pages](https://pages.github.com/)!

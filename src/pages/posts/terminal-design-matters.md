@@ -4,7 +4,6 @@ publishDate: 16 Jun 2022
 name: Andre Wruszczak
 description: Your windows shell should be so beautiful, you'd bring it home from the beach.   
 layout: ../../layouts/BlogPost.astro
-draft: true  
 ---
 
 ## **The irrational fear of terminals**

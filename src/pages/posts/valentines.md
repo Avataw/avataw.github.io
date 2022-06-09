@@ -4,7 +4,6 @@ publishDate: 14 Feb 2021
 name: Andre Wruszczak
 description: How I currently deploy my blog with Github, Gatsby and Vercel.
 layout: ../../layouts/BlogPost.astro
-draft: false 
 ---
 
 > ⚠️ This is outdated, the current blog uses [Astro](astro.build) and is deployed via [Github Pages](https://pages.github.com/)!
