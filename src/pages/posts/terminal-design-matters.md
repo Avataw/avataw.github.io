@@ -1,18 +1,30 @@
 ---
-title: Designing your terminal matters 
+title: Developers love designing (terminals)! 
 publishDate: 16 Jun 2022
 name: Andre Wruszczak
-description: Your windows shell should be so beautiful, you'd bring it home from the beach.   
+description: Your shell should be so beautiful, you'd bring it home from the beach.   
 layout: ../../layouts/BlogPost.astro
 ---
+
+## **Design vs. Development**
+
+There is a common prejudice against developers not caring about design and aesthetics. 
+
+In some companies I've even witnessed this sentiment causing fights between the developers and designers.
+
+Therefore I find it fascinating that there are some instances, where most developers truly enjoy stretching their artistic muscles!
+
+Don't believe me? Ask any developer you know about what theme or font their terminal uses.
+
+But before we get to the design part, let's talk about the general perception of terminals first.
 
 ## **The irrational fear of terminals**
 
 As a developer it is easy to forget that most people don't actually interact with terminals on a daily basis.
 
-I'd even go so far as to say that most people don't associate positive emotions with terminals.
+I'd even go so far as to say that most people don't associate any positive emotions with terminals at all.
 
-For example when I was a teenager, some games had scripts running on installation and I remember thinking that I got hacked when the terminal popped up - some text appeared and the terminal close itself again.
+For example when I was a teenager, some games had scripts running on installation and I remember thinking that I got hacked when the terminal popped up - some text appeared and the terminal rapidly closed itself again.
 
 Naturally I immediately unplugged the PC and was terrified of turning it back on again.
 
@@ -20,13 +32,15 @@ Naturally I immediately unplugged the PC and was terrified of turning it back on
 
 When I started programming, I was quite annoyed whenever I needed to open up a terminal for things to work properly.
 
-You can say what you want about Windows, but I'm sure many junior devs hated manually interacting with the Windows UI to make stuff work so much that they started using the terminal just because of that[^env].
+You can say what you want about Windows, but I'm sure many junior devs hated manually interacting with the Windows UI to make stuff work so much, that they started using the terminal just because of that[^env].
 
-Finally when I started regularly interacting with servers that often do not offer you any alternative to using a terminal - I made my peace with it[^peace].
+Finally when I started regularly interacting with servers, that often do not even offer you an UI - I had to make my peace with using the terminal[^peace].
 
 ## **Ugly Terminals :(**
 
-As a windows user I grew up with `cmd` which is as unstyled as they come.
+Having made peace, doesn't mean that I actually _enjoyed_ using it though.
+
+So as a windows user I grew up with `cmd` which is as unstyled as they come.
 
 ![cmd](/assets/blog/terminal-design-matters/cmd.png)
 
@@ -37,11 +51,14 @@ Can you blame me? I mean just look at this hideous error message display!
 
 ![powershell](/assets/blog/terminal-design-matters/powershell.png)
 
-For a couple of years I just half-heartedly used the `bash` that ships with Git and accepted the ugliness of my terminal on my private windows machine.
+The last couple of years I just half-heartedly used the `bash` that ships with Git, but I mostly just tried to avoid using any terminal whenever I could.
 
 ## **Trapped in the Windows Dimension**
 
-For many years I felt trapped in Windows as most VR/AR technologies did not function properly on Mac or Linux.
+Feeling trapped in Windows as most VR/AR technologies[^vrar] did not function properly on Mac or Linux, I just accepted the ugliness of my terminal and I kept telling myself:
+
+> "If only I could switch to Linux" 
+
 
 Thanks to [WSL](https://docs.microsoft.com/en-us/windows/wsl) I nowadays enjoy being able to game (which sadly still works best on Windows) and hobby code on the same machine, no dual booting required.
 
@@ -76,7 +93,7 @@ And yes - I wholeheartedly agree with this sentiment,
 
 After spending the last couple days tinkering with my terminal design, it brings me joy every time I open it up!
 
-Believe me when I say that I am now *actively looking for opportunities* to use my precious shell every chance I get. 
+Believe me when I say that I am now *actively looking for opportunities* to use my precious shell every chance I get. Making me a more well rounded and productive developer. 
 
 And I ❤ every second of it.
 
@@ -89,3 +106,4 @@ So feel free to quote me on this :
 [^env]: Environment variables for example: `setx -m JAVA_HOME "C:\Java\jdk_1.8"` anyone? :D
 [^peace]: No more unplugging the PC and living in fear for me! Ha!
 [^shell]: And the rest probably on stackoverflow..
+[^vrar]: I used to work primarily with unity and developed cool projects such as [smile](https://michaelschranner.wixsite.com/smile)!
