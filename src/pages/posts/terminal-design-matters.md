@@ -14,7 +14,7 @@ In some companies I've even witnessed this sentiment causing fights between the 
 
 Therefore I find it fascinating that there are some instances, where most developers truly enjoy stretching their artistic muscles!
 
-Don't believe me? Ask any developer you know about what theme or font their terminal uses.
+Don't believe me? Ask most developers what theme or font their terminal uses and they'll happily tell you all about their customization.
 
 But before we get to the design part, let's talk about the general perception of terminals first.
 
