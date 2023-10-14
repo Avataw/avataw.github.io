@@ -9,7 +9,7 @@ layout: ../../layouts/BlogPost.astro
 ## **My history with functional programming**
 So I don't consider myself an amazing developer. Neither do I dream in Haskell, nor do I work on the linux kernel in my spare time. And I'm cool with that.
 
-I do know some pretty good developers though and many of them have dabbled their fair share in a functional programming language. Their seems to be some correlation going on between functional programming languages and good developers. 
+I do know some pretty good developers though and many of them have dabbled their fair share in a functional programming language. There seems to be some correlation going on between functional programming languages and good developers. 
 
 Maybe it's dabbling with those languages that actually make you a good developer. 
 Or (in my opinion more likely) some good developers just naturally gravitate to those languages while bad ones shy away from them. 
