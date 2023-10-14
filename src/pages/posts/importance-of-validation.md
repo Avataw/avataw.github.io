@@ -40,7 +40,7 @@ Wait a second, let _developers talk to users_? That's absurd! **/s**
 
 ## **Hiding developers in the basement**  
 
-I don't know about you, but all too often I've worked in teams that were deliberately kept away from the users they wrote sofware for. 
+I don't know about you, but all too often I've worked in teams that were deliberately kept away from the users they wrote software for. 
 
 Often it's product managers or product owners minimizing the interaction between developers and users by working as some sort of proxy. 
 
@@ -52,7 +52,7 @@ Other times I got the feeling that the base assumption is that _no developer_ wa
 
 Personally I love talking to my users, I always get super motivated afterwards! And I'm sure I'm no exception.
 
-## **Why I build sofware**
+## **Why I build software**
 
 Developers have different reasons why they code and what motivates them.
 
