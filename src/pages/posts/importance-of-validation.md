@@ -1,6 +1,6 @@
 ---
 title: The importance of feeling validated
-publishDate: 23 Jun 2022
+publishDate: 21 Oct 2023
 name: Andre Wruszczak
 description: How validated learning can help you become a happier developer
 layout: ../../layouts/BlogPost.astro
