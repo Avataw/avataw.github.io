@@ -1,11 +1,16 @@
+---
+import ThemeIcon from "./ThemeIcon.astro";
+---
+
 <header class="wrapper">
   <article>
     <h1>
       <a href="/">
-        <img src="/avataw-logo.png" width="32" height="32" />
+        <img class="logo" src="/avataw-logo.png" width="32" height="32" />
         <span>Andre Wruszczak</span>
       </a>
     </h1>
+    <ThemeIcon />
   </article>
 </header>
 
@@ -40,6 +45,10 @@
   }
 
   h1 a span:hover {
-    color: var(--theme-accent)
+    color: var(--theme-accent);
+  }
+
+  :global(html.dark) .logo {
+    filter: invert();
   }
 </style>
