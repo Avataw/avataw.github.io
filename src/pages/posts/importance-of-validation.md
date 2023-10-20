@@ -1,6 +1,6 @@
 ---
 title: The importance of feeling validated
-publishDate: 21 Oct 2023
+publishDate: 20 Oct 2023
 name: Andre Wruszczak
 description: How validated learning can help you become a happier developer
 layout: ../../layouts/BlogPost.astro
@@ -10,9 +10,9 @@ layout: ../../layouts/BlogPost.astro
 
 As a developer it's not always easy to know if you are doing a good job.
 
-We cannot simply count the amount of produce we helped make as it is a bit more abstract than that, we produce code - which is basically text after all.
+Back in the days a common metric to measure developer productivity was counting the lines of code written.
 
-Counting the lines of code written can be quite a misleading metric though. 
+This can be quite a misleading metric though. 
 Especially while refactoring or bugfixing you can be super productive _deleting lines_, resulting in a negative amount of lines written.
 
 New features are often described as _user stories_, maybe we could just count the amount of user stories implemented and deployed to production?
@@ -31,8 +31,8 @@ I don't want to paraphrase too much as it's a great book and you should read it,
 It should be the responsibility of the development team to make sure that the changes made to the code actually provide a benefit.
 And in order to _prove_ that, meaningful metrics need to be introduced.
 
-For example, let's say you implemented several form validation rules.
-You could track if the amount of API-requests containing form errors go down.
+For example a frontend developer could implement several form validation rules.
+This should most likely lead to less _400 Bad Request_ HTTP error responses from the backend.
 
 Or maybe you could sit down with the users and observe if they react to the new form validation rules as expected.
 
@@ -72,7 +72,7 @@ Therefore implementing validated learning into my workflow by monitoring if the 
 
 Let me validate that I'm actually providing _value_.
 
-Let me feel _validated_ and _valued_.
+Let me feel both _validated_ and _valued_.
 
 I ❤ the feeling of helping people with code - so please don't try to hide me from the users :D
 
