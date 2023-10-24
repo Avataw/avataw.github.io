@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-lucario.css">
+  <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<!-- Primary Meta Tags -->
+<title>How to pull pull requests off</title>
+<meta name="title" content="How to pull pull requests off">
+<meta name="description" content="Pulling off the Band-Aid - quick and effective pull request practices&#34;">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url">
+<meta property="og:title" content="How to pull pull requests off">
+<meta property="og:description" content="Pulling off the Band-Aid - quick and effective pull request practices&#34;">
+<meta property="og:image" content="https://andrewru.com/social.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url">
+<meta property="twitter:title" content="How to pull pull requests off">
+<meta property="twitter:description" content="Pulling off the Band-Aid - quick and effective pull request practices&#34;">
+<meta property="twitter:image" content="https://andrewru.com/social.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;700&display=swap">
+<link rel="stylesheet" href="/_astro/artsocialhackathon.e4796bc2.css" />
+<link rel="stylesheet" href="/_astro/artsocialhackathon.ce43bd23.css" /></head>
+
+<body>
+  <header class="wrapper astro-ITMXXAHK">
+  <article class="astro-ITMXXAHK">
+    <h1 class="astro-ITMXXAHK">
+      <a href="/" class="astro-ITMXXAHK">
+        <img class="logo astro-ITMXXAHK" src="/avataw-logo.png" width="32" height="32">
+        <span class="astro-ITMXXAHK">Andre Wruszczak</span>
+      </a>
+    </h1>
+    <button id="themeToggle" class="astro-OEMX5LE4">
+    <svg width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="astro-OEMX5LE4">
+        <path class="sun astro-OEMX5LE4" fill-rule="evenodd" d="M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 1.5a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm12-7a.8.8 0 0 1-.8.8h-2.4a.8.8 0 0 1 0-1.6h2.4a.8.8 0 0 1 .8.8zM4 12a.8.8 0 0 1-.8.8H.8a.8.8 0 0 1 0-1.6h2.5a.8.8 0 0 1 .8.8zm16.5-8.5a.8.8 0 0 1 0 1l-1.8 1.8a.8.8 0 0 1-1-1l1.7-1.8a.8.8 0 0 1 1 0zM6.3 17.7a.8.8 0 0 1 0 1l-1.7 1.8a.8.8 0 1 1-1-1l1.7-1.8a.8.8 0 0 1 1 0zM12 0a.8.8 0 0 1 .8.8v2.5a.8.8 0 0 1-1.6 0V.8A.8.8 0 0 1 12 0zm0 20a.8.8 0 0 1 .8.8v2.4a.8.8 0 0 1-1.6 0v-2.4a.8.8 0 0 1 .8-.8zM3.5 3.5a.8.8 0 0 1 1 0l1.8 1.8a.8.8 0 1 1-1 1L3.5 4.6a.8.8 0 0 1 0-1zm14.2 14.2a.8.8 0 0 1 1 0l1.8 1.7a.8.8 0 0 1-1 1l-1.8-1.7a.8.8 0 0 1 0-1z"></path>
+        <path class="moon astro-OEMX5LE4" fill-rule="evenodd" d="M16.5 6A10.5 10.5 0 0 1 4.7 16.4 8.5 8.5 0 1 0 16.4 4.7l.1 1.3zm-1.7-2a9 9 0 0 1 .2 2 9 9 0 0 1-11 8.8 9.4 9.4 0 0 1-.8-.3c-.4 0-.8.3-.7.7a10 10 0 0 0 .3.8 10 10 0 0 0 9.2 6 10 10 0 0 0 4-19.2 9.7 9.7 0 0 0-.9-.3c-.3-.1-.7.3-.6.7a9 9 0 0 1 .3.8z"></path>
+    </svg>
+</button>
+
+
+
+<script>
+const theme = (() => {
+    if (localStorage.getItem("theme")) {
+        return localStorage.getItem("theme");
+    }
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        return "dark";
+    }
+    return "light";
+})();
+
+if (theme === "light") {
+    document.body.setAttribute("data-theme", "light");
+    document.documentElement.classList.remove("dark");
+} else {
+    document.body.setAttribute("data-theme", "dark");
+    document.documentElement.classList.add("dark");
+}
+
+document
+    .getElementById("themeToggle")
+    .addEventListener("click", function () {
+        const currentTheme = document.body.getAttribute("data-theme");
+
+        if (currentTheme === "dark") {
+            document.body.setAttribute("data-theme", "light");
+            document.documentElement.classList.remove("dark");
+            window.localStorage.setItem("theme", "light");
+        } else {
+            document.body.setAttribute("data-theme", "dark");
+            document.documentElement.classList.add("dark");
+            window.localStorage.setItem("theme", "dark");
+        }
+    });
+</script>
+  </article>
+</header>
+  <div class="wrapper">
+    <div class="layout astro-XJ2UYZ6M">
+  <article class="content astro-XJ2UYZ6M">
+    <div class="astro-XJ2UYZ6M">
+      <header class="astro-XJ2UYZ6M">
+        <p class="publish-date astro-XJ2UYZ6M">27 Oct 2023</p>
+        <h1 class="astro-D4CCHJSD">
+  How to pull pull requests off
+</h1>
+        <div class="author astro-2RI7I3M6">
+  <p class="astro-2RI7I3M6"><a href="https://github.com/Avataw" class="astro-2RI7I3M6">@Avataw</a></p>
+</div>
+        <h4 class="astro-XJ2UYZ6M">Pulling off the Band-Aid - quick and effective pull request practices&quot;</h4>
+      </header>
+      <main class="astro-XJ2UYZ6M">
+        
+      <h2 id="software-and-card-games"><strong>Software and card games</strong></h2>
+<p>Developing software is exactly like coming up with the rules for a card game<sup><a href="#user-content-fn-cardgame" id="user-content-fnref-cardgame" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup>.
+Imagine it having a rulebook with the following rules:</p>
+<ol>
+<li>Every player draws two cards</li>
+<li>Every player passes one card to the person left of them
+<ul>
+<li>If any person now has a pair - they win!</li>
+<li>Otherwise everyone passes another card and so on…</li>
+</ul>
+</li>
+</ol>
+<p>Well - it might not win game of the year anytime soon, but it’s a card game alright.
+Now software is usually a lot more complex than that - imagine a rulebook with 1000 <em>rules</em>.</p>
+<p>Or 10000 <em>rules</em>.</p>
+<p>In fact, there are so many <em>rules</em> necessary to build software, that it’s usually not feasible to do everything by yourself.</p>
+<h2 id="creating-as-a-team"><strong>Creating as a team</strong></h2>
+<p>Now imagine 10 card game developers, sitting around this rulebook.
+They could each just grab the rulebook and write new rules into it or cross existing ones out. This would most likely escalate to pure chaos <sup><a href="#user-content-fn-heresy" id="user-content-fnref-heresy" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup> in a matter of hours.</p>
+<p>Instead what developers usually do is the following:</p>
+<ol>
+<li>If any developer wants to change a page of the rulebook, they make a copy of the entire rulebook</li>
+<li>Then they change that copy accordingly</li>
+<li>Finally they show that copy to the other developers
+<ul>
+<li>If any of the developers agrees with those changes, the copied rulebook is now the new version of the rulebook</li>
+<li>If any of the developers does not agree with those changes, they recommend some improvements to be made.</li>
+</ul>
+</li>
+</ol>
+<h2 id="benefits-of-reviews"><strong>Benefits of reviews</strong></h2>
+<p><em>Showing that copy</em> to other developers is what is known as a pull request. It might just as well have been called <em>‘change request’</em>. Actually - now that I think about it, that name is probably a sufficient explanation in itself<sup><a href="#user-content-fn-explanation" id="user-content-fnref-explanation" data-footnote-ref="" aria-describedby="footnote-label">3</a></sup>.</p>
+<p>Reviews can lead to a lot of knowledge sharing between the developers.
+Every single developer might not have written the entire rulebook by themselves but having reviewed the other changes, they still know their way around it.</p>
+<p>Sometimes developers also overlook potential problems, typos or similar problems. These often get picked up in reviews too.</p>
+<p>A review is also a good opportunity to teach each other some nifty tricks too. Maybe by referencing another rule on page 13, the new rule can be reduced to one sentence?</p>
+<h2 id="putting-yourself-out-there"><strong>Putting yourself out there</strong></h2>
+<p>Still, creating a pull request can be a daunting task for a developer.
+Maybe you’re thinking:</p>
+<ul>
+<li>What if people laugh at you?</li>
+<li>What if you messed up something super critical?</li>
+<li>What if you left the curse words in from when you were debugging at 1 am last night?</li>
+</ul>
+<p>And I get it, in a way you are putting yourself out there too. This can be especially frightening if it’s your first pull request in a new team.</p>
+<p>Don’t worry though, it’s most likely going to be fine.</p>
+<p>And if someone actually laughs at you, shame on them, they are doing an awful job at reviewing.</p>
+<h2 id="reviewing-pull-requests"><strong>Reviewing Pull Requests</strong></h2>
+<p>First rule of reviewing pull requests: don’t laugh.</p>
+<p>Anything else is pretty much optional.
+If you actually want insights on how to review I recommend the <a href="https://www.morling.dev/blog/the-code-review-pyramid/">Code Review Pyramid</a>. I often blimpse on it while reviewing.</p>
+<p>Blub.</p>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-cardgame">
+<p>don’t quote me on that, okay? <a href="#user-content-fnref-cardgame" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+<li id="user-content-fn-heresy">
+<p><em>Blood for the <a href="https://knowyourmeme.com/memes/blood-for-the-blood-god">blood god</a>, rules for the .. rulebook?</em> <a href="#user-content-fnref-heresy" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+<li id="user-content-fn-explanation">
+<p>well, now I’ve already written that whole card game analogy. Oh well.. <a href="#user-content-fnref-explanation" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+</ol>
+</section>
+    
+      </main>
+    </div>
+  </article>
+</div>
+  </div>
+  <footer class="astro-SZ7XMLTE">
+  <div class="flexContainer astro-SZ7XMLTE">
+    <a href="/imprint" class="astro-SZ7XMLTE">Imprint</a>
+    <a href="/privacy" class="astro-SZ7XMLTE">Privacy</a>
+  </div>
+</footer>
+</body></html>
