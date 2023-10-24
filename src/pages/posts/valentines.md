@@ -8,21 +8,22 @@ layout: ../../layouts/BlogPost.astro
 
 > ⚠️ This is outdated, the current blog uses [Astro](astro.build) and is deployed via [Github Pages](https://pages.github.com/)!
 
-### Happy Valentines everyone!
+### Happy Valentines everyone
 
 Hopefully you have someone to share _**the love**_ today (or any other day actually ~) but just in case you don't, maybe you too will
 love how easy it can be to host a blog :)
 
-#### How to get started as quickly and easily as possible:
+#### How to get started as quickly and easily as possible
 
 So here is my current workflow enabling me to update my blog as easily as possible:
 ![workflow](/assets/blog/valentines/workflow.png)
 
 If you want to copy my exact setup you will need the following steps:
+
 - You need a Github account for your repository. Changes to your blog will be saved here.
 - Gatsby Cloud offers an easy way to build gatsby projects and deploy them to a hosting provider like ...
 - Vercel, a very simple (and if you use it personally, free) hosting provider
-- If you want a custom domain (e.g www.andrewru.com) you need to purchase it first :)
+- If you want a custom domain (e.g <www.andrewru.com>) you need to purchase it first :)
 
 ##### [Gatsby Cloud](https://www.gatsbyjs.com/cloud/)
 
@@ -48,15 +49,16 @@ At this point, everytime you push commits to your repository's main branch, Gats
 an imprint and privacy disclaimer (spoiler: if you live in Germany you probably do :/)
 
 ##### Stuff to consider
+
 So you probably don't want to give Gatsby Cloud and Vercel full access to all your repositories.
 In the future I might check if it isn't easier to just use [github actions](https://github.com/features/actions) directly
 especially because I am not a huge fan of the current build outbut by Gatsby Cloud. If it fails well... 🤷
 
 ##### Conclusion
+
 Well maybe this was not the easiest and quickest way possible... but it does beat setting up your own server and
 manually drag'n'dropping your built stuff via FileZilla.
 
 Anywhooo now that it's up and running it's as easy as ```git push``` in order to update this site :))
 
 I ❤ it.
-

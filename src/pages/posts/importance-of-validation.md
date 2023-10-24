@@ -12,15 +12,14 @@ As a developer it's not always easy to know if you are doing a good job.
 
 Back in the days a common metric to measure developer productivity was counting the lines of code written.
 
-This can be quite a misleading metric though. 
+This can be quite a misleading metric though.
 Especially while refactoring or bugfixing you can be super productive _deleting lines_, resulting in a negative amount of lines written.
 
 New features are often described as _user stories_, maybe we could just count the amount of user stories implemented and deployed to production?
 
-Sure, that's definitely an improvement, but *not all user stories are created equal*. Some might take several days or weeks to implement, others could be finished in a matter of hours. 
+Sure, that's definitely an improvement, but _not all user stories are created equal_. Some might take several days or weeks to implement, others could be finished in a matter of hours.
 
-And now ask yourself this, if you spent several months on some user stories, finally deliver and the *user hates them* - are you doing a good job?
-
+And now ask yourself this, if you spent several months on some user stories, finally deliver and the _user hates them_ - are you doing a good job?
 
 ## **Lean methodology to the rescue!**
 
@@ -40,13 +39,13 @@ Wait a second, let _developers talk to users_? That's absurd! **/s**
 
 ## **Hiding developers in the basement**  
 
-I don't know about you, but all too often I've worked in teams that were deliberately kept away from the users they wrote software for. 
+I don't know about you, but all too often I've worked in teams that were deliberately kept away from the users they wrote software for.
 
-Often it's product managers or product owners minimizing the interaction between developers and users by working as some sort of proxy. 
+Often it's product managers or product owners minimizing the interaction between developers and users by working as some sort of proxy.
 
 Their intentions might be justified, maybe they want to protect the developers from demotivating or unconstructive feedback. Maybe the client themselves are too busy or important and letting the developers observe them use new features might suggest unprofessionalism somehow[^unprofessionalism].
 
-And I'm sure not every developer wants to talk to their users all the time anyway, it's just that way too often there is a lot of distance between them making it difficult for conversations to get started even if they wanted to. 
+And I'm sure not every developer wants to talk to their users all the time anyway, it's just that way too often there is a lot of distance between them making it difficult for conversations to get started even if they wanted to.
 
 Other times I got the feeling that the base assumption is that _no developer_ wants to talk to users _ever_.
 
@@ -75,7 +74,6 @@ Let me validate that I'm actually providing _value_.
 Let me feel both _validated_ and _valued_.
 
 I ❤ the feeling of helping people with code - so please don't try to hide me from the users :D
-
 
 [^lean]: Don't let the name fool you, it's very relevant to developers not interested in start ups too!
 [^unprofessionalism]: In my personal experience, users were always super happy to talk to someone and give feedback - but I'm sure this can vary.

@@ -7,22 +7,23 @@ layout: ../../layouts/BlogPost.astro
 ---
 
 ## **My history with functional programming**
+
 So I don't consider myself an amazing developer. Neither do I dream in Haskell, nor do I work on the linux kernel in my spare time. And I'm cool with that.
 
-I do know some pretty good developers though and many of them have dabbled their fair share in a functional programming language. There seems to be some correlation going on between functional programming languages and good developers. 
+I do know some pretty good developers though and many of them have dabbled their fair share in a functional programming language. There seems to be some correlation going on between functional programming languages and good developers.
 
-Maybe it's dabbling with those languages that actually make you a good developer. 
-Or (in my opinion more likely) some good developers just naturally gravitate to those languages while bad ones shy away from them. 
+Maybe it's dabbling with those languages that actually make you a good developer.
+Or (in my opinion more likely) some good developers just naturally gravitate to those languages while bad ones shy away from them.
 
 Most universities probably start with an object-oriented programming language, as those are quite easy to explain and offer a gradual introduction to the modeling of code. I remember those awful Java classes very well.
 
-The first time I actually wrote in a functional language was in one of my favourite classes: 'Programming Paradigms'. It was a breath of much needed fresh air to write some small programs in languages with completely different concepts and ideas! 
+The first time I actually wrote in a functional language was in one of my favourite classes: 'Programming Paradigms'. It was a breath of much needed fresh air to write some small programs in languages with completely different concepts and ideas!
 
 One, if not the most challenging one for me was **Haskell**.
 Some of it concepts were just so foreign to me that I felt completely overwhelmed.
 Most of the online explanations for e.g monads [^monads] were also relying on a theoretical background that I clearly lacked.
 
-Over the years I used some functional paradigms in not fully functional languages like **Kotlin** or **Typescript**. 
+Over the years I used some functional paradigms in not fully functional languages like **Kotlin** or **Typescript**.
 
 And yet I never fully dabbled.
 
@@ -41,15 +42,17 @@ Thankfully ChatGPT4 has made those beginning steps incredibly easy for me. I jus
 ## **What it's been like so far**
 
 ### Loving Leniency
+
 Programming in Elixir reminds me a bit of Javascript. No types are needed - you can provide some though if you want to and I do enjoy this **opt-in** approach.
 
 If you ever worked in a typescript project that does not allow any (haha get it..) `any` types, you too probably have typed out some insane library function to make your project compile.
 
-And (at least in visual studio code) I get those nifty type inferences... ![elixir_spec](/assets/blog/sippingsomeelixir/elixir_spec.png) 
+And (at least in visual studio code) I get those nifty type inferences... ![elixir_spec](/assets/blog/sippingsomeelixir/elixir_spec.png)
 
 that I can add to the actual code by simply clicking on it. Elixir get's them somewhat right, most of the times.
 
 ### Doc-Driven-Development with docgen
+
 So I engineer software for a living and as any developer should, I highly value documentation. And as any self respecting developer does, I properly document my code all the time.
 
 Well - often [^sometimes].
@@ -91,27 +94,33 @@ end
 And that's it, it will run all the examples in your docs as actual tests!
 
 ### Interactivity
+
 You might have noticed the `iex` in front of the examples in the doc, it stands for the interactive elixir REPL.
 At this point REPLs are not a novel feature - but still a welcome one.
 
 It's always comfortable to call up a function and verify your assumptions on how it supposedly worked.
 
 ### Is it you, Mario?
+
 Well this joke is a bit far fetched [^pipes].
 Elixir has those **pipe operators** to pass the output of one function to the input of another one:
+
 ```elixir
 [1, 2, 3]
 |> Enum.map(&(&1 * 2)) # the list above get's passed into the map as the first parameter 
 |> Enum.sum() # the result of the map get's passed to the sum function 
 # => evaluates to 12
 ```
+
 It's a rather concise and readable way of structuring code.
 
 ### Confusing Captivity
+
 It's not all sunshine and roses though.
 One thing that is still confusing me is the `&` symbol, also known as the **capture** operator.
 
-It can be used to write an anonymous function as seen in the pipe example above: 
+It can be used to write an anonymous function as seen in the pipe example above:
+
 ```elixir
 double = &(&1 * 2)
 ```

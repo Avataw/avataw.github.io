@@ -8,7 +8,7 @@ layout: ../../layouts/BlogPost.astro
 
 ## **Design vs. Development**
 
-There is a common prejudice against developers not caring about design and aesthetics. 
+There is a common prejudice against developers not caring about design and aesthetics.
 
 In some companies I've even witnessed this sentiment causing fights between the developers and designers.
 
@@ -57,14 +57,13 @@ The last couple of years I just half-heartedly used the `bash` that ships with G
 
 Feeling trapped in Windows as most VR/AR technologies[^vrar] did not function properly on Mac or Linux, I just accepted the ugliness of my terminal and I kept telling myself:
 
-> "If only I could switch to Linux" 
-
+> "If only I could switch to Linux"
 
 Thanks to [WSL](https://docs.microsoft.com/en-us/windows/wsl) I nowadays enjoy being able to game (which sadly still works best on Windows) and hobby code on the same machine, no dual booting required.
 
 That being said, the WSL shortcut generated after installation is just a `wsl` command run on your default terminal.
 
-Therefore even though I was using Linux on Windows, my terminal still lacked style. 
+Therefore even though I was using Linux on Windows, my terminal still lacked style.
 
 ## **Windows redemption arc with 'Windows Terminal'**
 
@@ -76,7 +75,7 @@ And now just look at this beauty!
 
 It has tabs! I also configured it with a lovely acrylic background and my current go to color theme: [Dracula](https://draculatheme.com/)!
 
-Currently I use [starship](https://starship.rs/) for my prompt and the [FiraMono Nerd](https://github.com/ryanoasis/nerd-fonts) font. 
+Currently I use [starship](https://starship.rs/) for my prompt and the [FiraMono Nerd](https://github.com/ryanoasis/nerd-fonts) font.
 
 ## **Style... over... Substance?**
 
@@ -88,20 +87,19 @@ I feel like software engineers especially, often focus on the pragmatic and func
 >
 > -- Abraham Lincoln (software engineer at heart ... probably)
 
-And yes - I wholeheartedly agree with this sentiment, 
+And yes - I wholeheartedly agree with this sentiment,
 *but style does matter!*
 
 After spending the last couple days tinkering with my terminal design, it brings me joy every time I open it up!
 
-Believe me when I say that I am now *actively looking for opportunities* to use my precious shell every chance I get. Making me a more well rounded and productive developer. 
+Believe me when I say that I am now _actively looking for opportunities_ to use my precious shell every chance I get. Making me a more well rounded and productive developer.
 
 And I ❤ every second of it.
 
 So feel free to quote me on this :
-> Give me six hours to implement an important bugfix and I will spend the first four styling my shell[^shell].   
+> Give me six hours to implement an important bugfix and I will spend the first four styling my shell[^shell].
 >
-> -- Andre Wruszczak 
-
+> -- Andre Wruszczak
 
 [^env]: Environment variables for example: `setx -m JAVA_HOME "C:\Java\jdk_1.8"` anyone? :D
 [^peace]: No more unplugging the PC and living in fear for me! Ha!

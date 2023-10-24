@@ -21,6 +21,7 @@ My awesome team consisting of higher ups from several social institutions in my 
 insights into the daily business of social workers.
 
 After some brainstorming we came up with the following app ideas to pursue:
+
 1. **DESK SURFING** allow less people to use your home office for a job interview or proctored exam
 2. **LIFE SUPPORT** a chat bot directs you to a fitting support institution in your area.
 3. **HOBBY** everyone should get the chance to try out several hobbies to find theirs.
@@ -42,7 +43,7 @@ recently fallen in love with - not only because it is written in [Rust](https://
 
 ##### The Logo
 
-So I wanted to include multiple *fun colors* that are supposed to portray different activities that you try out on
+So I wanted to include multiple _fun colors_ that are supposed to portray different activities that you try out on
 your journey of finding the perfect hobby for you.
 
 ![hobby logo](/assets/blog/artsocialhackathon/hobbyLogo.png)
@@ -56,7 +57,6 @@ The name itself is just a WIP, I experimented with some other names like **funby
 A simple quiz is supposed to guide you to an activity-centered club around your location.
 
 ![hobby workflow](/assets/blog/artsocialhackathon/hobbyWorkflow.png)
-
 
 It was a lot of fun to adapt the thoughts behind the logo into the design of the single components.
 

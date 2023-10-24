@@ -13,7 +13,7 @@ use **Gatsby Cloud** to build this blog and **Vercel** to deploy and host it.
 
 Of course you have read it. You are a nice person.
 
-### Save the environment! Only host your blogs once!
+### Save the environment! Only host your blogs once
 
 So far my current pipeline served me well - but recently I've noticed that **Gatsby Cloud** automatically hosts my blog
 on some [weird internal URL](andrewru.gatsbyjs.io).
@@ -31,8 +31,7 @@ With tears in my eyes... I need to say my goodbyes to Vercel.
 
 You served me well old friend! I will never forget these magical ~18 days we had! **Never!**
 
-
-### Anyways...
+### Anyways
 
 Now my blog only gets build and hosted at one service, which hopefully reduces unnecessary data traffic.
 
@@ -50,4 +49,3 @@ A topic for another day. Another blog post probably too :)
 Until then ~
 
 I ❤ simplifying my CI pipelines!
-
