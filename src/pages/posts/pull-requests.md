@@ -89,7 +89,7 @@ Once, I've had to update a year old PR in a frontend monolith, that was not comp
 
 ## **Conclusion**
 
-Creating and reviewing pull requests is an art and it's importance can (at least in my opinion) **not** be overstated.
+Creating and reviewing pull requests is an art and its importance can (at least in my opinion) **not** be overstated.
 
 It also has a big impact on team dynamics.
 Therefore I urge you to treat pull requests with the respect they deserve.
