@@ -16,7 +16,7 @@ There are multiple official definitions for **slack**, the most relevant for thi
 and:
 > _work slowly or lazily_
 
-Also in my opinion, **slack** lies in the eye of the beholder.
+In my opinion, **slack** lies in the eye of the beholder.
 
 A developer might be perceived as a slacker by their peers - while just being diligent and a "measure twice, cut once" - kind of person, saving time in the long run.
 
@@ -54,10 +54,10 @@ There is a case to be made for pragmatism (amounting technical debt to generate 
 
 ### The negative impact on your team
 
-If you don't there is several things that you risk.
+By slacking you can negatively impact your team in multiple ways.
 
 You might set a bad precedent and there is a real risk of other team members starting to slack too. This is somewhat similar to the [broken windows theory](https://en.wikipedia.org/wiki/Broken_windows_theory).
-Especially dangerous if you other developers look up to you!
+Especially dangerous if other developers look up to you!
 
 If the slacking goes on for a longer time, there is a risk that the project amasses so much technical debt, that it's hard to get back from. This might lead to even more slacking in the future as pretty much nobody likes working in a messy project.
 
@@ -68,7 +68,7 @@ Personally I feel like it not only negatively impacts your team, but yourself to
 After a particularly stressful project I really needed some time and started slacking a bit here and there.
 Back then I've noticed how I started slacking in my personal life too.
 
-We spent so much time of our lifes working, it only makes sense for your behaviour at work to bleed into your personal life too. Unless you somehow manage to completely separate those two[^severance].
+We spent so much time of our lifes working, it only makes sense for our behaviour at work to bleed into our personal life too. Unless you somehow manage to completely separate those two[^severance].
 
 ## Slacklining
 
