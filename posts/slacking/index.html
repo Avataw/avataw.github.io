@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-lucario.css">
+  <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<!-- Primary Meta Tags -->
+<title>Slacking</title>
+<meta name="title" content="Slacking">
+<meta name="description" content="is lack of slack a bad thing?">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url">
+<meta property="og:title" content="Slacking">
+<meta property="og:description" content="is lack of slack a bad thing?">
+<meta property="og:image" content="https://andrewru.com/social.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url">
+<meta property="twitter:title" content="Slacking">
+<meta property="twitter:description" content="is lack of slack a bad thing?">
+<meta property="twitter:image" content="https://andrewru.com/social.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;700&display=swap">
+<link rel="stylesheet" href="/_astro/artsocialhackathon.e4796bc2.css" />
+<link rel="stylesheet" href="/_astro/artsocialhackathon.ce43bd23.css" /></head>
+
+<body>
+  <header class="wrapper astro-ITMXXAHK">
+  <article class="astro-ITMXXAHK">
+    <h1 class="astro-ITMXXAHK">
+      <a href="/" class="astro-ITMXXAHK">
+        <img class="logo astro-ITMXXAHK" src="/avataw-logo.png" width="32" height="32">
+        <span class="astro-ITMXXAHK">Andre Wruszczak</span>
+      </a>
+    </h1>
+    <button id="themeToggle" class="astro-OEMX5LE4">
+    <svg width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="astro-OEMX5LE4">
+        <path class="sun astro-OEMX5LE4" fill-rule="evenodd" d="M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 1.5a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm12-7a.8.8 0 0 1-.8.8h-2.4a.8.8 0 0 1 0-1.6h2.4a.8.8 0 0 1 .8.8zM4 12a.8.8 0 0 1-.8.8H.8a.8.8 0 0 1 0-1.6h2.5a.8.8 0 0 1 .8.8zm16.5-8.5a.8.8 0 0 1 0 1l-1.8 1.8a.8.8 0 0 1-1-1l1.7-1.8a.8.8 0 0 1 1 0zM6.3 17.7a.8.8 0 0 1 0 1l-1.7 1.8a.8.8 0 1 1-1-1l1.7-1.8a.8.8 0 0 1 1 0zM12 0a.8.8 0 0 1 .8.8v2.5a.8.8 0 0 1-1.6 0V.8A.8.8 0 0 1 12 0zm0 20a.8.8 0 0 1 .8.8v2.4a.8.8 0 0 1-1.6 0v-2.4a.8.8 0 0 1 .8-.8zM3.5 3.5a.8.8 0 0 1 1 0l1.8 1.8a.8.8 0 1 1-1 1L3.5 4.6a.8.8 0 0 1 0-1zm14.2 14.2a.8.8 0 0 1 1 0l1.8 1.7a.8.8 0 0 1-1 1l-1.8-1.7a.8.8 0 0 1 0-1z"></path>
+        <path class="moon astro-OEMX5LE4" fill-rule="evenodd" d="M16.5 6A10.5 10.5 0 0 1 4.7 16.4 8.5 8.5 0 1 0 16.4 4.7l.1 1.3zm-1.7-2a9 9 0 0 1 .2 2 9 9 0 0 1-11 8.8 9.4 9.4 0 0 1-.8-.3c-.4 0-.8.3-.7.7a10 10 0 0 0 .3.8 10 10 0 0 0 9.2 6 10 10 0 0 0 4-19.2 9.7 9.7 0 0 0-.9-.3c-.3-.1-.7.3-.6.7a9 9 0 0 1 .3.8z"></path>
+    </svg>
+</button>
+
+
+
+<script>
+const theme = (() => {
+    if (localStorage.getItem("theme")) {
+        return localStorage.getItem("theme");
+    }
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        return "dark";
+    }
+    return "light";
+})();
+
+if (theme === "light") {
+    document.body.setAttribute("data-theme", "light");
+    document.documentElement.classList.remove("dark");
+} else {
+    document.body.setAttribute("data-theme", "dark");
+    document.documentElement.classList.add("dark");
+}
+
+document
+    .getElementById("themeToggle")
+    .addEventListener("click", function () {
+        const currentTheme = document.body.getAttribute("data-theme");
+
+        if (currentTheme === "dark") {
+            document.body.setAttribute("data-theme", "light");
+            document.documentElement.classList.remove("dark");
+            window.localStorage.setItem("theme", "light");
+        } else {
+            document.body.setAttribute("data-theme", "dark");
+            document.documentElement.classList.add("dark");
+            window.localStorage.setItem("theme", "dark");
+        }
+    });
+</script>
+  </article>
+</header>
+  <div class="wrapper">
+    <div class="layout astro-XJ2UYZ6M">
+  <article class="content astro-XJ2UYZ6M">
+    <div class="astro-XJ2UYZ6M">
+      <header class="astro-XJ2UYZ6M">
+        <p class="publish-date astro-XJ2UYZ6M">10 Nov 2023</p>
+        <h1 class="astro-D4CCHJSD">
+  Slacking
+</h1>
+        <div class="author astro-2RI7I3M6">
+  <p class="astro-2RI7I3M6"><a href="https://github.com/Avataw" class="astro-2RI7I3M6">@Avataw</a></p>
+</div>
+        <h4 class="astro-XJ2UYZ6M">is lack of slack a bad thing?</h4>
+      </header>
+      <main class="astro-XJ2UYZ6M">
+        
+      <h2 id="it-happens"><strong>It happens</strong></h2>
+<p>In my career I’ve encountered a lot of developers who slack<sup><a href="#user-content-fn-slack" id="user-content-fnref-slack" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup> every now and then. And I’m not talking about using the <a href="https://slack.com/">app</a>.</p>
+<p>There are multiple official definitions for <strong>slack</strong>, the most relevant for this post are in my opinion:</p>
+<blockquote>
+<p><em>decrease or reduce in intensity, quantity, or speed</em></p>
+</blockquote>
+<p>and:</p>
+<blockquote>
+<p><em>work slowly or lazily</em></p>
+</blockquote>
+<p>Also in my opinion, <strong>slack</strong> lies in the eye of the beholder.</p>
+<p>A developer might be perceived as a slacker by their peers - while just being diligent and a “measure twice, cut once” - kind of person, saving time in the long run.</p>
+<p>At the same time another developer, highly praised by management for their hard work, could be spending most of their time reading web serials instead of working<sup><a href="#user-content-fn-serial" id="user-content-fnref-serial" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup>.</p>
+<h2 id="why-it-happens"><strong>Why it happens</strong></h2>
+<p>To preface this section, I would like to share that I suffer from workaholic tendencies.
+Several times in my career have I spent most of my days (and nights) working relentlessly on some work project, neglecting my personal life and health in the process.</p>
+<p>Refraining from falling back into this behaviour is something I’m constantly working on.</p>
+<p>One thing I keep telling junior developers is: “your career is a marathon and not a sprint!<sup><a href="#user-content-fn-sprint" id="user-content-fnref-sprint" data-footnote-ref="" aria-describedby="footnote-label">3</a></sup>”. A lesson I needed to learn the hard way.</p>
+<p>It’s foolish to expect yourself (or anyone really) to be able to give >= 100% every single day.</p>
+<p>After a particularly demanding project I think it’s perfectly healthy to slack a bit and replenish those resources<sup><a href="#user-content-fn-marathon" id="user-content-fnref-marathon" data-footnote-ref="" aria-describedby="footnote-label">4</a></sup>.
+This temporary decrease in intensity is necessary for a healthy work-life balance in my opinion.</p>
+<p>As long as you are not neglecting specific things nor fall in a rut, I think it’s fine.</p>
+<h2 id="why-it-aint-all-good"><strong>Why it ain’t all good</strong></h2>
+<p>Slacking is not always about recovery though.</p>
+<p>Something I observe in a lot of teams is the tendency to get lazy after some time. And that’s not necessarily a bad thing by itself, <em>laziness</em> is a <a href="https://thethreevirtues.com/">virtue for developers</a> after all!</p>
+<p>Maybe you have noticed this type of slacking in your team as well:</p>
+<ul>
+<li>Pull requests get approved without a proper review: “ahh I’m sure they know what they’re doing”</li>
+<li>Commit messages are mostly just “wip” or “fixed it”</li>
+<li>Your code is full of “TODO: cleanup this mess someday”</li>
+</ul>
+<p>There is a case to be made for pragmatism (amounting technical debt to generate business value faster) and <a href="https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it">YAGNI</a> but personally I feel like we developers should strive to be always diligent and reduce this part of slacking to a minimum.</p>
+<h3 id="the-negative-impact-on-your-team">The negative impact on your team</h3>
+<p>If you don’t there is several things that you risk.</p>
+<p>You might set a bad precedent and there is a real risk of other team members starting to slack too. This is somewhat similar to the <a href="https://en.wikipedia.org/wiki/Broken_windows_theory">broken windows theory</a>.
+Especially dangerous if you other developers look up to you!</p>
+<p>If the slacking goes on for a longer time, there is a risk that the project amasses so much technical debt, that it’s hard to get back from. This might lead to even more slacking in the future as pretty much nobody likes working in a messy project.</p>
+<h3 id="the-negative-impact-on-yourself">The negative impact on yourself</h3>
+<p>Personally I feel like it not only negatively impacts your team, but yourself too<sup><a href="#user-content-fn-personal" id="user-content-fnref-personal" data-footnote-ref="" aria-describedby="footnote-label">5</a></sup>.</p>
+<p>After a particularly stressful project I really needed some time and started slacking a bit here and there.
+Back then I’ve noticed how I started slacking in my personal life too.</p>
+<p>We spent so much time of our lifes working, it only makes sense for your behaviour at work to bleed into your personal life too. Unless you somehow manage to completely separate those two<sup><a href="#user-content-fn-severance" id="user-content-fnref-severance" data-footnote-ref="" aria-describedby="footnote-label">6</a></sup>.</p>
+<h2 id="slacklining">Slacklining</h2>
+<p>So which one is it? Is slacking bad or good?</p>
+<p>As is so often the case, <strong>it depends</strong>.</p>
+<p>Some slack is perfectly natural and I would never expect any team member to always work their butt off.
+What I do expect is some professional integrity though.</p>
+<p>To revisit the marathon metaphor<sup><a href="#user-content-fn-metaphoron" id="user-content-fnref-metaphoron" data-footnote-ref="" aria-describedby="footnote-label">7</a></sup>: it’s completely fine to go slower for some time - just don’t take a 4 hour break in a McDonalds in the middle of a marathon.</p>
+<p>If you keep finding yourself exhausted and in need of exhaustive recovery time, it might be time to evaluate your current job.</p>
+<p>I’d love to see more teams plan for slack and implement something like <em>recovery sprints</em> every now and then.</p>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-slack">
+<p><a href="https://knowyourmeme.com/memes/well-of-course-i-know-him-hes-me">Well, of course…</a> <a href="#user-content-fnref-slack" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+<li id="user-content-fn-serial">
+<p>you know who you are! <a href="#user-content-fnref-serial" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+<li id="user-content-fn-sprint">
+<p>don’t let the scrum fanatics tell you anything else! <a href="#user-content-fnref-sprint" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+<li id="user-content-fn-marathon">
+<p>what do you mean, you cannot take weeklong breaks in a marathon?! <a href="#user-content-fnref-marathon" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+<li id="user-content-fn-personal">
+<p>take this with a grain of salt though - workaholic, remember? :D <a href="#user-content-fnref-personal" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+<li id="user-content-fn-severance">
+<p>Hmm, this might make for a good <a href="https://en.wikipedia.org/wiki/Severance_(TV_series)">TV show</a>! <a href="#user-content-fnref-severance" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+<li id="user-content-fn-metaphoron">
+<p>marathon…metaphor.. <strong>metaphoron</strong>? Okay maybe this one is a bit <strong>m(etaph)oronic</strong> haha get it. Okay I’ll stop. <a href="#user-content-fnref-metaphoron" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+</ol>
+</section>
+    
+      </main>
+    </div>
+  </article>
+</div>
+  </div>
+  <footer class="astro-SZ7XMLTE">
+  <div class="flexContainer astro-SZ7XMLTE">
+    <a href="/imprint" class="astro-SZ7XMLTE">Imprint</a>
+    <a href="/privacy" class="astro-SZ7XMLTE">Privacy</a>
+  </div>
+</footer>
+</body></html>
