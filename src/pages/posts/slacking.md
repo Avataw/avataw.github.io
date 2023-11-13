@@ -36,7 +36,7 @@ It's foolish to expect yourself (or anyone really) to be able to give >= 100% ev
 After a particularly demanding project I think it's perfectly healthy to slack a bit and replenish those resources[^marathon].
 This temporary decrease in intensity is necessary for a healthy work-life balance in my opinion.
 
-As long as you are not neglecting specific things nor fall in a rut, I think it's fine.
+As long as you are not neglecting specific things nor fall into a rut, I think it's fine.
 
 ## **Why it ain't all good**
 
@@ -50,7 +50,7 @@ Maybe you have noticed this type of slacking in your team as well:
 - Commit messages are mostly just "wip" or "fixed it"
 - Your code is full of "TODO: cleanup this mess someday"
 
-There is a case to be made for pragmatism (amounting technical debt to generate business value faster) and [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it) but personally I feel like we developers should strive to be always diligent and reduce this part of slacking to a minimum.
+There is a case to be made for pragmatism (accruing technical debt to generate business value faster) and [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it) but personally I feel like we developers should strive to be always diligent and reduce this part of slacking to a minimum.
 
 ### The negative impact on your team
 
