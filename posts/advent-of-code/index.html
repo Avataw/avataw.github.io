@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-lucario.css">
+  <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<!-- Primary Meta Tags -->
+<title>Advent of code!</title>
+<meta name="title" content="Advent of code!">
+<meta name="description" content="participate and suffer along!">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url">
+<meta property="og:title" content="Advent of code!">
+<meta property="og:description" content="participate and suffer along!">
+<meta property="og:image" content="https://andrewru.com/social.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url">
+<meta property="twitter:title" content="Advent of code!">
+<meta property="twitter:description" content="participate and suffer along!">
+<meta property="twitter:image" content="https://andrewru.com/social.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;700&display=swap">
+<link rel="stylesheet" href="/_astro/advent-of-code.e4796bc2.css" />
+<link rel="stylesheet" href="/_astro/advent-of-code.ce43bd23.css" /></head>
+
+<body>
+  <header class="wrapper astro-ITMXXAHK">
+  <article class="astro-ITMXXAHK">
+    <h1 class="astro-ITMXXAHK">
+      <a href="/" class="astro-ITMXXAHK">
+        <img class="logo astro-ITMXXAHK" src="/avataw-logo.png" width="32" height="32">
+        <span class="astro-ITMXXAHK">Andre Wruszczak</span>
+      </a>
+    </h1>
+    <button id="themeToggle" class="astro-OEMX5LE4">
+    <svg width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="astro-OEMX5LE4">
+        <path class="sun astro-OEMX5LE4" fill-rule="evenodd" d="M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 1.5a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm12-7a.8.8 0 0 1-.8.8h-2.4a.8.8 0 0 1 0-1.6h2.4a.8.8 0 0 1 .8.8zM4 12a.8.8 0 0 1-.8.8H.8a.8.8 0 0 1 0-1.6h2.5a.8.8 0 0 1 .8.8zm16.5-8.5a.8.8 0 0 1 0 1l-1.8 1.8a.8.8 0 0 1-1-1l1.7-1.8a.8.8 0 0 1 1 0zM6.3 17.7a.8.8 0 0 1 0 1l-1.7 1.8a.8.8 0 1 1-1-1l1.7-1.8a.8.8 0 0 1 1 0zM12 0a.8.8 0 0 1 .8.8v2.5a.8.8 0 0 1-1.6 0V.8A.8.8 0 0 1 12 0zm0 20a.8.8 0 0 1 .8.8v2.4a.8.8 0 0 1-1.6 0v-2.4a.8.8 0 0 1 .8-.8zM3.5 3.5a.8.8 0 0 1 1 0l1.8 1.8a.8.8 0 1 1-1 1L3.5 4.6a.8.8 0 0 1 0-1zm14.2 14.2a.8.8 0 0 1 1 0l1.8 1.7a.8.8 0 0 1-1 1l-1.8-1.7a.8.8 0 0 1 0-1z"></path>
+        <path class="moon astro-OEMX5LE4" fill-rule="evenodd" d="M16.5 6A10.5 10.5 0 0 1 4.7 16.4 8.5 8.5 0 1 0 16.4 4.7l.1 1.3zm-1.7-2a9 9 0 0 1 .2 2 9 9 0 0 1-11 8.8 9.4 9.4 0 0 1-.8-.3c-.4 0-.8.3-.7.7a10 10 0 0 0 .3.8 10 10 0 0 0 9.2 6 10 10 0 0 0 4-19.2 9.7 9.7 0 0 0-.9-.3c-.3-.1-.7.3-.6.7a9 9 0 0 1 .3.8z"></path>
+    </svg>
+</button>
+
+
+
+<script>
+const theme = (() => {
+    if (localStorage.getItem("theme")) {
+        return localStorage.getItem("theme");
+    }
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        return "dark";
+    }
+    return "light";
+})();
+
+if (theme === "light") {
+    document.body.setAttribute("data-theme", "light");
+    document.documentElement.classList.remove("dark");
+} else {
+    document.body.setAttribute("data-theme", "dark");
+    document.documentElement.classList.add("dark");
+}
+
+document
+    .getElementById("themeToggle")
+    .addEventListener("click", function () {
+        const currentTheme = document.body.getAttribute("data-theme");
+
+        if (currentTheme === "dark") {
+            document.body.setAttribute("data-theme", "light");
+            document.documentElement.classList.remove("dark");
+            window.localStorage.setItem("theme", "light");
+        } else {
+            document.body.setAttribute("data-theme", "dark");
+            document.documentElement.classList.add("dark");
+            window.localStorage.setItem("theme", "dark");
+        }
+    });
+</script>
+  </article>
+</header>
+  <div class="wrapper">
+    <div class="layout astro-XJ2UYZ6M">
+  <article class="content astro-XJ2UYZ6M">
+    <div class="astro-XJ2UYZ6M">
+      <header class="astro-XJ2UYZ6M">
+        <p class="publish-date astro-XJ2UYZ6M">01 Dec 2023</p>
+        <h1 class="astro-D4CCHJSD">
+  Advent of code!
+</h1>
+        <div class="author astro-2RI7I3M6">
+  <p class="astro-2RI7I3M6"><a href="https://github.com/Avataw" class="astro-2RI7I3M6">@Avataw</a></p>
+</div>
+        <h4 class="astro-XJ2UYZ6M">participate and suffer along!</h4>
+      </header>
+      <main class="astro-XJ2UYZ6M">
+        
+      <h2 id="chocolate-and-code"><strong>Chocolate and Code</strong></h2>
+<p>One thing that I actually like about Germany is the widespread love for advent calendars. It may be a childish thing, but I personally cherish this tradition a lot.</p>
+<p>It’s so lovely to have this unusual calendar<sup><a href="#user-content-fn-calendar" id="user-content-fnref-calendar" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup> around, filled with a daily reward of some sort - usually chocolate!</p>
+<p>Advent of Code does pretty much the same thing, only instead of chocolate it’s filled with delicious programming challenges!</p>
+<h2 id="how-it-works"><strong>How it works</strong></h2>
+<p>Every day between December 1st and the 25th around midnight EST/UTC-5 a new challenge get’s posted on <a href="https://adventofcode.com/2023">the current calendar</a>.</p>
+<p>You just need an account to participate.</p>
+<p>The challenges contain a lot of flavourful text as well as the actual problem to solve: the players are normally tasked to help save Christmas one way or another. Usually this involves a lot of interaction with Santa’s elves who are notoriously horrible at their jobs<sup><a href="#user-content-fn-jobs" id="user-content-fnref-jobs" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup>.</p>
+<p>The faster you solve it after the global start of the challenge, the more points you get.
+There is a <a href="https://adventofcode.com/2023/leaderboard">global leaderboard</a> but only the first 100 players to solve the challenge actually get points there, therefore people on that list are ridiculously good at coding challenges.</p>
+<p>For people who cannot inverse a binary tree in under a minute (blindfolded mind you) - advent of code offers the possibility to create private leaderboards, allowing you to compete with your similarly incapable friends or colleagues<sup><a href="#user-content-fn-enemies" id="user-content-fnref-enemies" data-footnote-ref="" aria-describedby="footnote-label">3</a></sup>!</p>
+<h2 id="opportunity-for-learning"><strong>Opportunity for learning</strong></h2>
+<p>The beauty of advent of code is, that it’s completely programming language agnostic. You can choose whatever you want - the input is just a text file containing your individualized challenge input and to solve it you simply paste your solution to the designated form field.</p>
+<p>Some people even solve the challenges using Excel or similarily silly tools<sup><a href="#user-content-fn-excel" id="user-content-fnref-excel" data-footnote-ref="" aria-describedby="footnote-label">4</a></sup>:.</p>
+<p>I think it’s the perfect opportunity to try out a new language or even paradigm!
+Maybe you would like to try out this <strong>Rust</strong> everyone is talking about?</p>
+<p>Personally I’m challenging myself this year by using <a href="https://elixir-lang.org/">Elixir</a>!
+I thought about using Julia, Zig or Golang - but I feel like it would be too soon for me to dive into yet another language.</p>
+<h2 id="difficulty"><strong>Difficulty</strong></h2>
+<p>Be aware though, the calendar might start with trivial challenges at first, but usually around the 18-19 day mark it gets really tough and time consuming.</p>
+<p>Unless you are some sort of code challenge prodigy, you should plan >2 hours for those at least. Sometimes the biggest challenge is actually finding time around christmas :D</p>
+<p>It’s important to not get demotivated by those tough challenges though. They normally involve some sort of algorithm you simply might not have encountered yet! Once you know these, it get’s a lot easier.</p>
+<p>If you want to prepare, I highly recommend checking out at least:</p>
+<ul>
+<li>shortest path algorithm</li>
+<li>flood fill algorithm</li>
+<li>memoization stuff</li>
+</ul>
+<p>You don’t need to though, in my opinion most of the fun is coming up with your own solution!</p>
+<h2 id="fun"><strong>Fun!</strong></h2>
+<p>I love puzzles!</p>
+<p>I might love puzzles too much actually, if I can’t solve a puzzle it haunts me. It will occupy a big part of my brain for quite some time<sup><a href="#user-content-fn-time" id="user-content-fnref-time" data-footnote-ref="" aria-describedby="footnote-label">5</a></sup> very much to the dismay of my loved ones.</p>
+<p>Once I come up with a solution and I get that coveted star from advent of code, all the suffering was well worth it!</p>
+<p>Honestly, I think advent of code helped me rediscover my love for programming!</p>
+<p>So if you currently want:</p>
+<ul>
+<li>to try out a new programming language,</li>
+<li>to brag to your coworkers</li>
+<li>a small challenge to respark your love for programming</li>
+<li>to challenge your friends</li>
+</ul>
+<p>you should give it a shot!</p>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-calendar">
+<p>normally my calendar is filled exclusively with dreadful deadlines and the like :( <a href="#user-content-fnref-calendar" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+<li id="user-content-fn-jobs">
+<p>to be fair, I don’t think they get paid - so I totally get it. <a href="#user-content-fnref-jobs" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+<li id="user-content-fn-enemies">
+<p>be aware, it’s a competition after all. So don’t be surprised if people start trash talking and so on :D <a href="#user-content-fnref-enemies" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+<li id="user-content-fn-excel">
+<p>yes I think Excel is silly. Sue me Microsoft. <a href="#user-content-fnref-excel" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+<li id="user-content-fn-time">
+<p>usually until I actually solved it. <a href="#user-content-fnref-time" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+</ol>
+</section>
+    
+      </main>
+    </div>
+  </article>
+</div>
+  </div>
+  <footer class="astro-SZ7XMLTE">
+  <div class="flexContainer astro-SZ7XMLTE">
+    <a href="/imprint" class="astro-SZ7XMLTE">Imprint</a>
+    <a href="/privacy" class="astro-SZ7XMLTE">Privacy</a>
+  </div>
+</footer>
+</body></html>
