@@ -1,0 +1,245 @@
+---
+import AnimatedTitle from "../components/AnimatedTitle.astro";
+import BaseHead from "../components/BaseHead.astro";
+import BlogHeader from "../components/BlogHeader.astro";
+import Footer from "../components/Footer.astro";
+import InfoBlock from "../components/InfoBlock.astro";
+
+import createSegment from "../helper/createSegment";
+
+let title = "Andre Wruszczak CV";
+let description = "My current curriculum vitae";
+let permalink = "https://andrewru.com/cv";
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} permalink={permalink} />
+
+    <style>
+      .content {
+        margin-top: 4rem;
+        margin-bottom: 8rem;
+        min-height: 72.5vh;
+      }
+
+      .content :global(main > * + *) {
+        margin-top: 1rem;
+      }
+
+      .intro {
+        padding-bottom: 4rem;
+        margin-bottom: 2rem;
+        border-bottom: 4px solid var(--theme-divider);
+        text-align: center;
+      }
+
+      .intro > * {
+        margin: 0;
+      }
+
+      .columns {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      @media only screen and (min-width: 1000px) {
+        .columns {
+          flex-direction: row;
+          gap: 5rem;
+        }
+
+        .left-column {
+          flex: 1;
+        }
+
+        .right-column {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <BlogHeader />
+    <div class="wrapper">
+      <main class="content">
+        <section class="intro">
+          <AnimatedTitle title="Senior Fullstack Engineer" />
+          <h4>glue worker and aspiring team Lead</h4>
+        </section>
+        <div class="columns">
+          <div class="left-column">
+            <section aria-label="experience">
+              <h2>Experience</h2>
+              <InfoBlock
+                title="Senior Fullstack Engineer @ Interhyp Gruppe"
+                segments={[
+                  createSegment(
+                    { from: new Date(2023, 9), to: "now" },
+                    "Senior Fullstack Engineer",
+                    "Test"
+                  ),
+                  createSegment(
+                    { from: new Date(2022, 0), to: new Date(2023, 8) },
+                    "Fullstack Engineer",
+                    "Test2"
+                  ),
+                ]}
+              />
+
+              <InfoBlock
+                title="Frontend Consultant @ Novatec Consulting GmbH"
+                segments={[
+                  createSegment(
+                    { from: new Date(2021, 0), to: new Date(2021, 11) },
+                    "Consultant - Frontend Quality Expert",
+                    "Test 3"
+                  ),
+                  createSegment(
+                    { from: new Date(2020, 3), to: new Date(2020, 11) },
+                    "Junior Consultant",
+                    "Test4"
+                  ),
+                ]}
+              />
+
+              <InfoBlock
+                title="Self Employed @ Avataw"
+                segments={[
+                  createSegment(
+                    { from: new Date(2016, 5), to: "now" },
+                    "Self Employed",
+                    "Test 5"
+                  ),
+                ]}
+              />
+
+              <InfoBlock
+                title="Project Lead @ SCMT GmbH"
+                closed
+                segments={[
+                  createSegment(
+                    { from: new Date(2019, 9), to: new Date(2020, 2) },
+                    "Project Lead",
+                    "Test 6"
+                  ),
+                ]}
+              />
+
+              <InfoBlock
+                title="Working Student @ SOLID WHITE"
+                closed
+                segments={[
+                  createSegment(
+                    { from: new Date(2017, 3), to: new Date(2018, 4) },
+                    "Working Student",
+                    "Test 7"
+                  ),
+                ]}
+              />
+
+              <InfoBlock
+                title="Working Student @ AEB"
+                closed
+                segments={[
+                  createSegment(
+                    { from: new Date(2015, 4), to: new Date(2016, 4) },
+                    "Working Student",
+                    "Test 8"
+                  ),
+                ]}
+              />
+            </section>
+          </div>
+
+          <div class="right-column">
+            <section aria-label="education">
+              <h2>Education</h2>
+
+              <InfoBlock
+                title="M.Sc Business Informatics @ IU"
+                segments={[
+                  createSegment(
+                    { from: new Date(2021, 3), to: "now" },
+                    "Working Student",
+                    "Test 9"
+                  ),
+                ]}
+              />
+
+              <InfoBlock
+                title="B.Sc Software Engineering @ University of Stuttgart"
+                segments={[
+                  createSegment(
+                    { from: new Date(2013, 8), to: new Date(2019, 3) },
+                    "Working Student",
+                    "Test 10"
+                  ),
+                ]}
+              />
+            </section>
+
+            <section aria-label="volunteering">
+              <h2>Volunteering</h2>
+              <InfoBlock
+                title="Ready To Code"
+                segments={[
+                  createSegment(
+                    { from: new Date(2020, 6), to: "now" },
+                    "Member",
+                    "Test 11"
+                  ),
+                ]}
+              />
+
+              <InfoBlock
+                title="Climactivity"
+                segments={[
+                  createSegment(
+                    { from: new Date(2020, 10), to: new Date(2021, 11) },
+                    "Consultant & Developer",
+                    "Test 11"
+                  ),
+                ]}
+              />
+            </section>
+
+            <section aria-label="certifications">
+              <h2>Certifications</h2>
+
+              <InfoBlock
+                title="Certified Professional for Software Architecture (CPSA-F)"
+                closed
+                segments={[
+                  createSegment(
+                    { from: new Date(2021, 2) },
+                    "iSAQB® – International Software Architecture Qualification Board",
+                    "Test 12"
+                  ),
+                ]}
+              />
+
+              <InfoBlock
+                title="Professional Scrum Master™ I (PSM I)"
+                closed
+                segments={[
+                  createSegment(
+                    { from: new Date(2020, 3) },
+                    "Scrum.org",
+                    "Test 13"
+                  ),
+                ]}
+              />
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+    <Footer showImprint showPrivacy />
+  </body>
+</html>

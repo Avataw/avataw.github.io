@@ -1,0 +1,42 @@
+---
+import type Segment from "../types/Segment";
+export interface Props {
+  title: string;
+  segments: Segment[];
+  closed?: boolean;
+}
+
+const { title, segments, closed } = Astro.props;
+
+const oldestSegment = segments.at(-1);
+const latestSegment = segments.at(0);
+
+const totalTime = {
+  from: oldestSegment?.time.from,
+  to: latestSegment?.time.to,
+};
+---
+
+<details open={!closed}>
+  <summary>
+    {title}
+    {totalTime.to && "| " + totalTime.from + " - " + totalTime.to}
+  </summary>
+  {
+    segments.map(({ title, description, time: { from, to } }) => (
+      <>
+        <p>
+          {title} | {from} {to && "- " + to}
+        </p>
+        <pre>{description}</pre>
+        <br />
+      </>
+    ))
+  }
+</details>
+
+<style>
+  summary {
+    font-size: x-large;
+  }
+</style>
