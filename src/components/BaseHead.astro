@@ -1,5 +1,5 @@
 ---
-import '../styles/blog.css';
+import "../styles/blog.css";
 
 export interface Props {
   title: string;
@@ -35,5 +35,13 @@ const { title, description, permalink } = Astro.props;
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.gstatic.com" />
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;700&display=swap" />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;700&display=swap"
+/>
+
+<!-- Plausible Analytics -->
+<script
+  defer
+  data-domain="andrewru.com"
+  src="https://plausible.andrewru.com/js/script.js"></script>
